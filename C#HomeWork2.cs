@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Вывод второго знака из заданного числа
+
+double DigitCounter(double num)
+{
+    if(num < 0)
+    {
+        num = num * - 1;
+    }
+    return Math.Floor(num);
+}
+
+double n = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine(DigitCounter(n));
