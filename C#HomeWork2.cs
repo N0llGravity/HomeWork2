@@ -14,20 +14,25 @@ void LessTen(double smallnum)              //Работа с дробными ч
     {
         if(smallnum == Math.Floor(smallnum))
         {
-            Console.WriteLine($"Number {smallnum} has not a second digit");
+            Console.WriteLine("Number has not a second digit");
         }
         
         else
         {
             double secondDigit = Math.Floor((smallnum % 1) * 10);
-            Console.WriteLine($"second digit of in number {smallnum} is {secondDigit}");
+            Console.WriteLine($"second digit of this number is {secondDigit}");
         }
 
     }
 
-void MoreTen(double bignum)
+void MoreTen(double bignum)                //Работа с числами больше 10
 {
-    bignum
+    while(bignum > 100)
+    {
+        bignum = bignum / 10;
+    }
+    bignum = bignum % 10;
+    Console.WriteLine($"second digit of this number is {bignum}"); 
 }
 
 
