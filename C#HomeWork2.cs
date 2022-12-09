@@ -97,6 +97,28 @@ else
 Morehundred(reversed, n);
 */
 
-// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+/*// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
-bool CheckHoliday()
+bool CheckHoliday(int day)
+{
+    if (day == 6 || day == 7)
+    {
+    return true;
+    }
+    else
+    {
+    return false;
+    }
+}
+
+Console.WriteLine("Input a day number ");
+int d = Convert.ToInt32(Console.ReadLine());
+if(d >= 1 && d <= 7)
+{
+    Console.WriteLine($"{CheckHoliday(d)}");
+}
+else
+{
+    Console.WriteLine("Incorrect day number");
+}
+*/
